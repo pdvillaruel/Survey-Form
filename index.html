@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey</title>
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <div class="container">
+  <header class="header">
+  <h1>Primed Sports Survey Form</h1>
+  <p id="description" class="description text-center">
+   Please enter your name and email.
+  </p>
+  </header>
+  <form id="survey-form">
+   <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+     <input 
+      type="text"
+      name="name"
+      id="name"
+      class="form-control"
+      placeholder="Enter your name"
+      required
+      />
+   </div>
+   <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+     <input 
+      type="text" 
+      name="email"  
+      id="email"
+      class="form-control"
+      placeholder="Enter your email"
+      required
+      />
+   </div>
+ 
+
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your favorite sport to bet on?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select sport</option>
+        <option value="basketball">Basketball</option>
+        <option value="football">Football</option>
+        <option value="baseball">Baseball</option>
+        <option value="hockey">Hockey</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Which sportsbook do you primarily use?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="fanduel"
+          type="radio"
+          class="input-radio"
+          checked
+        />Fanduel</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="draft-kings"
+          type="radio"
+          class="input-radio"
+        />Draft Kings</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="betrivers"
+          type="radio"
+          class="input-radio"
+        />Betrivers</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="betmgm"
+          type="radio"
+          class="input-radio"
+        />BetMGM</label
+      >
+
+      <label>
+         <input 
+         name="user-recommend"
+         value="other"
+         type="radio"
+         class="input-radio"
+         />Other
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your betting style?
+      </p>
+      <select id="most-like" name="betstyle" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="conservative">Conservative</option>
+        <option value="parlay">Parlays All Day</option>
+        <option value="volume">Multiple Straight Bets</option>
+        <option value="everything">All the Above</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What resources do you use to determine your bets?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="data-models"
+          type="checkbox"
+          class="input-checkbox"
+        />Data Models</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="social-media"
+          type="checkbox"
+          class="input-checkbox"
+        />Social Media Handicappers</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="paid-handicap"
+          type="checkbox"
+          class="input-checkbox"
+        />Paid Handicappers</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="trend"
+          type="checkbox"
+          class="input-checkbox"
+        />Sports Trends</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="personal-analysis"
+          type="checkbox"
+          class="input-checkbox"
+        />Personal Analysis</label
+      >
+      <label
+      ><input
+      name="prefer"
+      value="podcast"
+      type="checkbox"
+      class="input-checkbox"
+      />Podcasts</label
+      >
+      <label
+      ><input
+      name="prefer"
+      value="discord"
+      type="checkbox"
+      class="input-checkbox"
+      />Discord</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="guess"
+          type="checkbox"
+          class="input-checkbox"
+        />I just guess</label
+      >
+
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Reddit/Sports Forums</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+        />Other</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>For any questions/comments:</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+   
+  </form>
+ </div>
+</body>
+</html>
